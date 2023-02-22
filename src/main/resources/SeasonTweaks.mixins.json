@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "club.iananderson.seasontweaks.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "seasontweaks.refmap.json",
+  "mixins": [
+    "tropicalBiomes"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
