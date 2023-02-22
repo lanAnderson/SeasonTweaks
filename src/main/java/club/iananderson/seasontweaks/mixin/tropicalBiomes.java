@@ -1,5 +1,6 @@
 package club.iananderson.seasontweaks.mixin;
 
+import club.iananderson.seasontweaks.config.Config;
 import net.minecraft.core.Holder;
 import net.minecraft.world.level.biome.Biome;
 import org.spongepowered.asm.mixin.Mixin;
@@ -19,7 +20,9 @@ public class tropicalBiomes {
     )
 
     private static void usesTropicalSeasons(Holder<Biome> biome, CallbackInfoReturnable<Boolean> callback){
-        callback.setReturnValue(false);
+        if(Config.disableTropicalSeasons.get()){
+            callback.setReturnValue(false);
+        }
     }
 
 
