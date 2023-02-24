@@ -2,16 +2,21 @@ buildscript {
     repositories {
         // These repositories are only for Gradle plugins, put any other repositories in the repository block further below
         maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
+        maven { url = 'https://maven.minecraftforge.net' }
+        maven { url = 'https://maven.parchmentmc.org' }
         mavenCentral()
     }
     dependencies {
         classpath 'org.spongepowered:mixingradle:0.7-SNAPSHOT'
+        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
+        classpath 'org.parchmentmc:librarian:1.+'
     }
 }
 
 plugins {
     id 'net.minecraftforge.gradle' version '5.1.+'
     id 'org.parchmentmc.librarian.forgegradle' version '1.+'
+    id 'maven-publish'
 }
 
 apply plugin: 'net.minecraftforge.gradle'
@@ -21,13 +26,13 @@ group = 'club.iananderson'
 version = '1.0.1'
 
 java {
-    archivesBaseName = 'seasontweaks-1.19.2'
+    archivesBaseName = 'seasontweaks-1.18.2'
     toolchain.languageVersion = JavaLanguageVersion.of(17)
 }
 
 minecraft {
 
-    mappings channel: 'parchment', version: '2022.11.06-1.19.2'
+    mappings channel: 'parchment', version: '2022.11.06-1.18.2'
 
     runs {
         client {
@@ -122,12 +127,12 @@ repositories {
 
 dependencies {
 
-    minecraft 'net.minecraftforge:forge:1.19.2-43.2.4'
+    minecraft 'net.minecraftforge:forge:1.18.2-40.2.1'
 
     /Serene Seasons/
-    implementation "curse.maven:serene-seasons-291874:4037228"
-    implementation "curse.maven:serene-seasons-291874:4037230"
-    //compileOnly "curse.maven:serene-seasons-291874:4037231"
+    implementation "curse.maven:serene-seasons-291874:3693807"
+    implementation "curse.maven:serene-seasons-291874:3693808"
+    //compileOnly "curse.maven:serene-seasons-291874:3693809"
 
     //implementation fg.deobf("curse.maven:seasonhud-690971:4405369")
 

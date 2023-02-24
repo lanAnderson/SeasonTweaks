@@ -38,7 +38,7 @@ public class SeasonTweaks {
         MinecraftForge.EVENT_BUS.register(this);
 
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.GENERAL_SPEC,
-                "SeasonTweaks-common.toml");
+                "seasontweaks-common.toml");
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
