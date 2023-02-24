@@ -21,13 +21,13 @@ group = 'club.iananderson'
 version = '1.0.1'
 
 java {
-    archivesBaseName = 'seasontweaks-1.19.2'
+    archivesBaseName = 'seasontweaks-1.19.3'
     toolchain.languageVersion = JavaLanguageVersion.of(17)
 }
 
 minecraft {
 
-    mappings channel: 'parchment', version: '2022.11.06-1.19.2'
+    mappings channel: 'parchment', version: '2023.02.05-1.19.3'
 
     runs {
         client {
@@ -122,12 +122,12 @@ repositories {
 
 dependencies {
 
-    minecraft 'net.minecraftforge:forge:1.19.2-43.2.4'
+    minecraft 'net.minecraftforge:forge:1.19.3-44.1.0'
 
     /Serene Seasons/
-    implementation "curse.maven:serene-seasons-291874:4037228"
-    implementation "curse.maven:serene-seasons-291874:4037230"
-    //compileOnly "curse.maven:serene-seasons-291874:4037231"
+    implementation "curse.maven:serene-seasons-291874:4166545"
+    implementation "curse.maven:serene-seasons-291874:4166546"
+    //compileOnly "curse.maven:serene-seasons-291874:4166547" //api
 
     //implementation fg.deobf("curse.maven:seasonhud-690971:4405369")
 

@@ -22,13 +22,13 @@ side = "BOTH"
 [[dependencies.seasontweaks]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.19.2,1.20)"
+versionRange = "[1.19.3,1.20)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.seasontweaks]]
 modId = "sereneseasons"
 mandatory = true
-versionRange = "[1.19-8.0.0.19,)"
+versionRange = "[1.19.3-8.2.0.27,)"
 ordering = "AFTER"
 side = "BOTH"
