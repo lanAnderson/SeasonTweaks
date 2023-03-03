@@ -18,7 +18,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.spongepowered.mixin'
 
 group = 'club.iananderson'
-version = '1.0.1'
+version = '1.0.2'
 
 java {
     archivesBaseName = 'seasontweaks-1.19.3'
@@ -125,9 +125,9 @@ dependencies {
     minecraft 'net.minecraftforge:forge:1.19.3-44.1.0'
 
     /Serene Seasons/
-    implementation "curse.maven:serene-seasons-291874:4166545"
-    implementation "curse.maven:serene-seasons-291874:4166546"
-    //compileOnly "curse.maven:serene-seasons-291874:4166547" //api
+    implementation "curse.maven:serene-seasons-291874:4408359"
+    implementation "curse.maven:serene-seasons-291874:4408360"
+    //compileOnly "curse.maven:serene-seasons-291874:4408361" //api
 
     //implementation fg.deobf("curse.maven:seasonhud-690971:4405369")
 
